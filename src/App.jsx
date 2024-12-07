@@ -29,6 +29,7 @@ function App() {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, length);
     window.navigator.clipboard.writeText(password);
+    window.alert("Copied to clipboard") 
   }, [password]);
 
   //used useEffect hook
